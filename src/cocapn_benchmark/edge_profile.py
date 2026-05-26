@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from typing import Callable, List, Optional, TypeVar
 
 from .timer import BenchmarkResult
+from .memory import MemoryResult  # noqa: F401 — used in dataclass forward ref
 
 T = TypeVar("T")
 

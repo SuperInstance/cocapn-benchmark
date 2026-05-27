@@ -37,7 +37,8 @@ def test_compare_results():
     contender = BenchmarkResult(wall_times=[2.0, 2.0], cpu_times=[2.0, 2.0])
     comp = compare_results(baseline, contender)
     assert comp.wall_diff_pct == 100.0
-    assert comp.winner == "contender"
+    # contender is slower → baseline "wins" the comparison
+    assert comp.winner == "baseline"
 
 
 def test_compare_suite():
@@ -45,6 +46,7 @@ def test_compare_suite():
     cs.add_baseline("a", BenchmarkResult(wall_times=[1.0], cpu_times=[1.0]))
     cs.add_contender("a", BenchmarkResult(wall_times=[0.5], cpu_times=[0.5]))
     comp = cs.compare("a")
-    assert comp.winner == "baseline"
+    # contender is faster → contender wins
+    assert comp.winner == "contender"
     report = cs.report()
     assert "a" in report

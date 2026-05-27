@@ -1,8 +1,11 @@
+README.md
 pyproject.toml
 src/cocapn_benchmark/__init__.py
+src/cocapn_benchmark/benchmark.py
 src/cocapn_benchmark/compare.py
 src/cocapn_benchmark/edge_profile.py
 src/cocapn_benchmark/memory.py
+src/cocapn_benchmark/report.py
 src/cocapn_benchmark/suite.py
 src/cocapn_benchmark/timer.py
 src/cocapn_benchmark.egg-info/PKG-INFO
@@ -10,5 +13,6 @@ src/cocapn_benchmark.egg-info/SOURCES.txt
 src/cocapn_benchmark.egg-info/dependency_links.txt
 src/cocapn_benchmark.egg-info/requires.txt
 src/cocapn_benchmark.egg-info/top_level.txt
+tests/test_all.py
 tests/test_suite.py
 tests/test_timer.py

@@ -55,6 +55,7 @@ Runs `fn` through setup → warmup → measurement → teardown.
 ### `MemorySnapshot` — Memory tracking
 
 ## How It Fits
+- [OpenConstruct Documentation](https://github.com/SuperInstance/openconstruct-docs) — ecosystem-wide docs and guides
 
 Performance backbone for the [SuperInstance fleet](https://github.com/SuperInstance). Every package runs through `cocapn-benchmark` before release.
 
